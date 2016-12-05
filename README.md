@@ -40,7 +40,7 @@ const bar = "\n  Hello,\n  World!\n";
 
 My primary use case for this plugin is to enable writing multi-line MySQL queries.
 
-In MySQL, if an [identifier](https://dev.mysql.com/doc/refman/5.5/en/identifiers.html) contains special characters or is a reserved word, you must quote it whenever you refer to it. The identifier quote character is the backtick (`````).
+In MySQL, if an [identifier](https://dev.mysql.com/doc/refman/5.5/en/identifiers.html) contains special characters or is a reserved word, you must quote it whenever you refer to it. The identifier quote character is the backtick (`` ` ``).
 
 Nonreserved keywords are permitted as identifiers without quoting. However, it is a healthy habit to quote all identifiers to prevent accidental collision with [keywords, reserved words](https://dev.mysql.com/doc/refman/5.5/en/keywords.html) and names of [built-in functions](http://dev.mysql.com/doc/refman/5.7/en/functions.html).
 

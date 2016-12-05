@@ -1,0 +1,47 @@
+{
+  "author": {
+    "email": "gajus@gajus.com",
+    "name": "Gajus Kuizinas",
+    "url": "http://gajus.com"
+  },
+  "dependencies": {
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-types": "^6.19.0"
+  },
+  "description": "Transforms JSX elements to a string literal.",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-helper-plugin-test-runner": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "eslint": "^3.11.1",
+    "eslint-config-canonical": "^5.8.0",
+    "flow-bin": "^0.36.0",
+    "husky": "^0.11.9",
+    "mocha": "^3.2.0",
+    "semantic-release": "^6.3.5"
+  },
+  "engines": {
+    "node": ">5.0.0"
+  },
+  "keywords": [
+    "babel-plugin",
+    "sql",
+    "mysql",
+    "heredoc"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "dist/index.js",
+  "name": "babel-plugin-transform-jsx-element-to-string-literal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gajus/babel-plugin-transform-jsx-element-to-string-literal"
+  },
+  "scripts": {
+    "build": "rm -fr ./dist && NODE_ENV=production babel ./src --out-dir ./dist --source-maps",
+    "lint": "eslint ./src",
+    "precommit": "npm run test",
+    "test": "NODE_ENV=development npm run lint && npm run build && mocha --compilers js:babel-register && flow"
+  },
+  "version": "1.0.0"
+}
